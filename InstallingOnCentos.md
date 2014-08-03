@@ -43,4 +43,4 @@
 
 [Install zeromq on Amazon Centos](zeromq.md)
 
-[Install TIKA on Centos](TIKA)
+[Install TIKA on Centos](TIKA.md)
