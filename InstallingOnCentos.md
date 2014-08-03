@@ -41,6 +41,10 @@
 
 [Install NGINX with NODEJS](nginx-nodejs.md)
 
+[Install nginx on centos with php-fpm](Centos-php-fpm.md)
+
+[Install mariadb on centos](Centos-mariadb.md)
+
 [Install zeromq on Amazon Centos](zeromq.md)
 
 [Install TIKA on Centos](TIKA.md)
