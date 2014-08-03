@@ -1,6 +1,5 @@
 
-```
-#!bash
+```bash
 
 #! /bin/bash
 

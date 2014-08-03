@@ -8,8 +8,7 @@ You can also highlight snippets of text (we use the excellent [Pygments][] libra
 
 Here's an example of some Python code:
 
-```
-#!python
+```python
 
 def wiki_rocks(text):
     formatter = lambda t: "funky"+t

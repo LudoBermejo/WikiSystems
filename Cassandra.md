@@ -4,8 +4,7 @@ You *must* have java7 in order to use Cassandra. You can check [how to install j
 
 Next, edit the repositories
 
-```
-#!bash
+```bash
 
 sudo vi /etc/yum.repos.d/datastax.repo
 ```
@@ -26,16 +25,14 @@ gpgcheck=0
 And install Cassandra
 
 
-```
-#!bash
+```bash
 
 sudo yum install dsc20  
 ```
 
 It's no over yet! We must modify /etc/hosts to add our host. To do so, we need to know our IP. Best way to do it? Just execute 
 
-```
-#!bash
+```bash
 
 cassandra
 ```

@@ -3,48 +3,42 @@
 First we download Sublime 3 package from [here](http://www.sublimetext.com/3)
 
 
-```
-#!bash
+```bash
 
 wget http://c758482.r82.cf2.rackcdn.com/sublime_text_3_build_3059_x64.tar.bz2
 ```
 
 Next we uncompress the file
 
-```
-#!bash
+```bash
 
 tar xvjf sublime_text_3_build_3059_x64.tar.bz2
 ```
 
 Now we copy the sublime_text directory into /opt
 
-```
-#!bash
+```bash
 
 cp -rf sublime_text_3 /opt
 ```
 
 And then create a symbolic link.
 
-```
-#!bash
+```bash
 
 sudo ln -s /opt/sublime_text_3/sublime_text /usr/bin/sublime3
 ```
 
 Now we can execute sublime3 with only one line
 
-```
-#!bash
+```bash
 
 sublime3
 ```
 
 Now we are going to create an icon in our desktop. Just open a new document with sublime3
 
-```
-#!bash
+```bash
 
 sudo sublime3 /usr/share/applications/sublime3.desktop
 ```
@@ -52,8 +46,7 @@ sudo sublime3 /usr/share/applications/sublime3.desktop
 And put this code into it:
 
 
-```
-#!bash
+```bash
 
 [Desktop Entry]
 Name=Sublime3

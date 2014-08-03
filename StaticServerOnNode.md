@@ -1,8 +1,7 @@
 Simple. Just install a few packagers:
 
 
-```
-#!bash
+```bash
 
 npm install connect  serve-static
 ```
@@ -21,8 +20,7 @@ connect().use(serveStatic(__dirname)).listen(80);
 Then, execute node
 
 
-```
-#!bash
+```bash
 
 node server.js
 ```

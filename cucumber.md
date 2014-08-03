@@ -17,8 +17,7 @@ Cucumber.js is tested on:
 ## Installing cucumber ##
 
 
-```
-#!bash
+```bash
 
 npm install -g cucumber
 ```

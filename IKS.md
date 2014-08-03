@@ -4,22 +4,19 @@
 
 IKS install is easy deasy. Just download the file (you can check lasts versions on [the project's page](https://code.google.com/p/iks-project/))
 
-```
-#!bash
+```bash
 wget http://dev.iks-project.eu/downloads/iks-stack-releases/IKS-RI-7.0.zip
 ```
 
 Unzip the file
 
-```
-#!bash
+```bash
 unzip IKS-RI-7.0.zip
 ```
 
 And finally execute the .jar
 
-```
-#!bash
+```bash
 cd IKS-RI-7.0/
 java -Xmx1024m -jar iks-7.0-launcher.jar
 ```

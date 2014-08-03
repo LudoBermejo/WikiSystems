@@ -1,8 +1,7 @@
 Easy. First download it
 
 
-```
-#!bash
+```bash
 
 wget http://uni-smr.ac.ru/archive/dev/java/SDKs/sun/j2se/7/jdk-7u45-linux-x64.rpm
 
@@ -11,8 +10,7 @@ wget http://uni-smr.ac.ru/archive/dev/java/SDKs/sun/j2se/7/jdk-7u45-linux-x64.rp
 Next, install with rpm
 
 
-```
-#!bash
+```bash
 
 rpm -i jdk-7u45-linux-x64.rpm
 

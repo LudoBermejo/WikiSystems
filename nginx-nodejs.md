@@ -3,8 +3,7 @@
 First we need to create the nginx repo:
 
 
-```
-#!bash
+```bash
 
 vi /etc/yum.repos.d/nginx.repo
 ```
@@ -12,8 +11,7 @@ vi /etc/yum.repos.d/nginx.repo
 With this lines
 
 
-```
-#!bash
+```bash
 
 [nginx]
 name=nginx repo
@@ -24,16 +22,14 @@ enabled=1
 
 Next, we install nginx
 
-```
-#!bash
+```bash
 
 yum install nginx
 ```
 
 Now the best we can do is change the nginx path. So:
 
-```
-#!bash
+```bash
 
 mkdir /var/www
 mkdir /var/www/nginx
@@ -46,8 +42,7 @@ sudo chown -R nodejs /var/www/nodejs
 This is an example for use nginx as a reverse proxy for nodejs. *It's not finished yet, but it works!*
 
 ## /etc/nginx/nginx.conf ##
-```
-#!bash
+```bash
 
 # For more information on configuration, see:
 #   * Official English Documentation: http://nginx.org/en/docs/
@@ -126,8 +121,7 @@ Ok, next is the host configuration. Check this example:
 /etc/nginx/conf.d/vhost.conf (*example*)
 
 
-```
-#!bash
+```bash
 
     server {
         listen       80;

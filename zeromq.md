@@ -6,8 +6,7 @@ First of all, we need to create a new repos. By default, the amazon repository h
 
 So first we create the repo:
 
-```
-#!bash
+```bash
 
 sudo nano /etc/yum/zeromq.repo
 
@@ -15,8 +14,7 @@ sudo nano /etc/yum/zeromq.repo
 
 With this data:
 
-```
-#!bash
+```bash
 
 [home_fengshuo_zeromq]
 name=The latest stable of zeromq builds (CentOS_CentOS-6)
@@ -31,8 +29,7 @@ enabled=1
 Next we need to install zeromq and zeromq-dev
 
 
-```
-#!bash
+```bash
 
 yum install zeromq
 yum install zeromq-devel
@@ -45,8 +42,7 @@ First download de repo:
 
 
 
-```
-#!bash
+```bash
 
 cd ~
 git clone https://bitbucket.org/LudoItop/zeromq-example.git
@@ -60,8 +56,7 @@ npm install
 So, finally we need to open the server & the client:
 
 
-```
-#!bash
+```bash
 
 # server
 node ~/zeromq-example/zeromq-server/server.js

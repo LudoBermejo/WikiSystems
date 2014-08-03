@@ -4,8 +4,7 @@ First of all, we must make sure to have the **Java JDK 7** installed.
 
 Then, the next steps are:
 
-```
-#!bash
+```bash
 
 wget -O neo4j.tar.gz http://dist.neo4j.org/neo4j-community-2.1.2-unix.tar.gz
 tar zxvf neo4j.tar.gz
@@ -17,8 +16,7 @@ cd /opt/neo4j
 To avoid some problems with the neo4j service, we'll install lsof:
 
 
-```
-#!bash
+```bash
 
 yum install lsof
 ```
@@ -28,16 +26,14 @@ At this point you must follow the instructions of the installer ( don't worry, i
 To start/stop the neo4j service:
 
 
-```
-#!bash
+```bash
 
 /opt/neo4j/bin/neo4j start
 /opt/neo4j/bin/neo4j stop
 ```
 
 To check if neo4j is running, in a web browser go to 
-```
-#!bash
+```bash
 
 http://localhost:7474/
 ```
@@ -52,8 +48,7 @@ In the grub menu, we press 'e' to edit the second line (it begins like "kernel /
 
 In the single mode we have to deactivate the neo4j-service. To do this, we write:
 
-```
-#!bash
+```bash
 
 chkconfig --del neo4j-service
 reboot

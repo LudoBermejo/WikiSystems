@@ -5,8 +5,7 @@ We are going to install Tika under the Nodejs user. Please check [this tutorial]
 First, we need to download Tika from [here](http://tika.apache.org/download.html)
 
 
-```
-#!bash
+```bash
 
 sudo su nodejs
 cd 
@@ -18,8 +17,7 @@ cp tika-app-1.5.jar tika.jar
 
 Next we need to make it executable. We need to create a execute script:
 
-```
-#!bash
+```bash
 
 nano stub.sh
 
@@ -27,8 +25,7 @@ nano stub.sh
 
 With this text:
 
-```
-#!bash
+```bash
 
 #!/bin/sh
 MYSELF=`which "$0" 2>/dev/null`
@@ -44,16 +41,14 @@ exit 1
 
 Next, we append this file to tika:
 
-```
-#!bash
+```bash
 
 cat stub.sh tika.jar > tika && chmod +x tika
 ```
 
 And we try it
 
-```
-#!bash
+```bash
 
 mkdir tmp
 cd tmp
@@ -65,8 +60,7 @@ tika --text tmp/example.pdf >prueba.txt
 
 Ok, first is done. Now we only have to add this path to the nodejs script loading server. Just edit .bashrc:
 
-```
-#!bash
+```bash
 
 cd 
 nano .bashrc
@@ -76,8 +70,7 @@ nano .bashrc
 And edit the PATH (something like this):
 
 
-```
-#!bash
+```bash
 
 
 # User specific aliases and functions

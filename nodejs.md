@@ -2,8 +2,7 @@
 
 First of all, we need to update our system:
 
-```
-#!bash
+```bash
 
 sudo yum -y update
 
@@ -13,8 +12,7 @@ Next, we need to download NodeJS source, compile and install it.
 
 First it's first, we need to install the development tools:
 
-```
-#!bash
+```bash
 
 sudo yum -y groupinstall "Development Tools"  
 
@@ -23,8 +21,7 @@ sudo yum -y groupinstall "Development Tools"
 Now we create a nodejs user and change her password
 
 
-```
-#!bash
+```bash
 
 sudo adduser nodejs --home /home/nodejs --shell /bin/bash
 sudo passwd nodejs
@@ -34,8 +31,7 @@ sudo passwd nodejs
 Now we enter as this user
 
 
-```
-#!bash
+```bash
 
 su nodejs
 ```
@@ -43,8 +39,7 @@ su nodejs
 Create the ~/.npmrc file:
 
 
-```
-#!bash
+```bash
 
 vim ~/.npmrc
 ```
@@ -52,8 +47,7 @@ vim ~/.npmrc
 Set the contents of the ~/.npmrc file to the following:
 
 
-```
-#!bash
+```bash
 
 root = /home/nodejs/.local/lib/node_modules
 binroot = /home/nodejs/.local/bin
@@ -63,16 +57,14 @@ manroot = /home/nodejs/.local/share/man
 Create the ~/.local directory:
 
 
-```
-#!bash
+```bash
 
 mkdir ~/.local
 ```
 
 Next we download the sources
 
-```
-#!bash
+```bash
 
 wget http://nodejs.org/dist/node-latest.tar.gz  
 
@@ -80,8 +72,7 @@ wget http://nodejs.org/dist/node-latest.tar.gz
 
 Now we uncompress the sources:
 
-```
-#!bash
+```bash
 
 tar zxf node-*.tar.gz  
 cd node-v*  
@@ -90,8 +81,7 @@ cd node-v*
 
 We prepare the compiler and compile node:
 
-```
-#!bash
+```bash
 
 ./configure --prefix=~/.local
 make  
@@ -99,8 +89,7 @@ make
 
 And finally we install it
 
-```
-#!bash
+```bash
 
 make install  
 ```
@@ -108,8 +97,7 @@ make install
 Finally we must add the path to node to .bashrc
 
 
-```
-#!bash
+```bash
 
 vi ~/.bashrc
 ```
@@ -117,8 +105,7 @@ vi ~/.bashrc
 And add this line of code
 
 
-```
-#!bash
+```bash
 
 export PATH=$HOME/.local/bin:$PATH
 
@@ -127,8 +114,7 @@ export PATH=$HOME/.local/bin:$PATH
 Finally, we must create a symbolic link to npm
 
 
-```
-#!bash
+```bash
 
 ln -s ~/.local/lib/node_modules ~/.node_modules
 

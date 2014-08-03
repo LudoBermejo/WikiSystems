@@ -6,8 +6,7 @@
 Easy-peasy, first create this script (it's for bombur-server, but you can change it easily):
 
 
-```
-#!bash
+```bash
 
 sudo nano /etc/init.d/bombur_server
 ```
@@ -79,8 +78,7 @@ exit $RETVAL
 And then you have your own service. Something like:
 
 
-```
-#!bash
+```bash
 
 sudo service start bombur_server
 

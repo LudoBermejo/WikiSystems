@@ -3,8 +3,7 @@
 First, create a project with rio package
 
 
-```
-#!bash
+```bash
 
 npm install rio
 ```
@@ -12,8 +11,7 @@ npm install rio
 Next, execute R and activate Rserve (for more information of Rserve, please check [this link](http://rforge.net/Rserve/). Note: Rserve must be installed
 
 
-```
-#!bash
+```bash
 
 R
 install.packages("Rserve",dependencies=TRUE)

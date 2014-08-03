@@ -9,32 +9,28 @@ _Note: if you have a Lenovo computer, you might have to enable Virtual Intel tec
 Now, you need internet. But in the Virtual machine, internet is not working! Why? Because it doesn't boot by default. I don't know why. To fix this problem, just:
 
 
-```
-#!bash
+```bash
 
 sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 And find the line:
 
-```
-#!bash
+```bash
 
 ONBOOT=no
 ```
 
 And change it for yes:
 
-```
-#!bash
+```bash
 
 ONBOOT=yes
 ```
 
 Finally execute this command
 
-```
-#!bash
+```bash
 
 /etc/init.d/network restart 2
 ```
@@ -58,8 +54,7 @@ vim /etc/sudoers
 Find this lines
 
 
-```
-#!bash
+```bash
 
 ## Allow root to run any commands anywhere
 root     ALL=(ALL)     ALL
@@ -68,8 +63,7 @@ root     ALL=(ALL)     ALL
 And add this line (replace USERNAME with your user)
 
 
-```
-#!bash
+```bash
 
 [USERNAME]     ALL=(ALL)     ALL
 ```
