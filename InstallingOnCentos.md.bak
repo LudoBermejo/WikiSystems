@@ -48,5 +48,3 @@
 [Install zeromq on Amazon Centos](zeromq.md)
 
 [Install TIKA on Centos](TIKA.md)
-
-[Using jenkins with nodejs](jenkins-in-nodejs.md)
